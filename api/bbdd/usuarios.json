@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Jon",
+        "apellidos": "Aurtenetxe Borde",
+        "email": "jon@gmail.com",
+        "password": "123456"
+    },
+    {
+        "id": 2,
+        "nombre": "Ander",
+        "apellidos": "Sastre Diaz",
+        "email": "ander@gmail.com",
+        "password": "568912"
+    },
+    {
+        "id": 3,
+        "nombre": "Idoia",
+        "apellidos": "Biel Sastre",
+        "email": "idoia@gmail.com",
+        "password": "906423"
+    },
+    {
+        "id": 4,
+        "nombre": "Xabi",
+        "apellidos": "Perez Sainz",
+        "email": "xabi@gmail.com",
+        "password": "743801"
+    },
+    {
+        "id": 5,
+        "nombre": "Erika",
+        "apellidos": "Aguirre Garcia",
+        "email": "erika@gmail.com",
+        "password": "094723"
+    },
+    {
+        "id": 6,
+        "nombre": "Alex",
+        "apellidos": "Calle",
+        "email": "alex@gmail.com",
+        "password": "369423"
+    },
+    {
+        "id": 7,
+        "nombre": "Ana",
+        "apellidos": "Lopez Martin",
+        "email": "ana@gmail.com",
+        "password": "671856"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "nombre": "Leche Desnatada",
+        "marca": "Pascual",
+        "precio": 1,
+        "unidades": 50
+    },
+    {
+        "id": 2,
+        "nombre": "Pimientos Piquillo",
+        "marca": "Carretilla",
+        "precio": 2.5,
+        "unidades": 45
+    },
+    {
+        "id": 3,
+        "nombre": "Pan Integral",
+        "marca": "Bimbo",
+        "precio": 1.99,
+        "unidades": 30
+    },
+    {
+        "id": 4,
+        "nombre": "Chocolate con Leche",
+        "marca": "Nestle",
+        "precio": 1.5,
+        "unidades": 65
+    },
+    {
+        "id": 5,
+        "nombre": "Yogur Coco",
+        "marca": "Danone",
+        "precio": 2,
+        "unidades": 80
+    },
+    {
+        "id": 6,
+        "nombre": "Refresco Naranja",
+        "marca": "Fanta",
+        "precio": 0.99,
+        "unidades": 64
+    },
+    {
+        "id": 7,
+        "nombre": "Queso Fresco",
+        "marca": "Philadelphia",
+        "precio": 2.99,
+        "unidades": 20
+    }
+]
