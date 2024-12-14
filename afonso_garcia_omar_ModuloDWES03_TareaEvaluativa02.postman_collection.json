@@ -1,0 +1,263 @@
+{
+	"info": {
+		"_postman_id": "7a052968-684a-4e58-aba9-d55626fbb061",
+		"name": "Guía de Consultas HTTP - Tarea Eva. 02 DWES03",
+		"description": "Esta es la guía de consultas para la Tarea Eva.02 de DWES03. El ejemplo para la tarea será una apliación de una tienda de alimentación online, y en ella se podrán hacer operaciones CRUD sobre los productos y usuarios de una tienda.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "39817620"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los Productos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/tienda/productos/get",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"productos",
+						"get"
+					]
+				},
+				"description": "Esta solicitud GET obtiene una lista de todos los productos disponibles en la tienda.\n\n**Caso de uso:** Al pulsar enviar debería devolver la información de todos los productos disponibles."
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un Producto por su ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/tienda/productos/get/5",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"productos",
+						"get",
+						"5"
+					]
+				},
+				"description": "Esta solicitud GET obtendría un producto concreto de la tienda catalogado por su Id.\n\n**Caso de uso:** Si se cambia el valor de `{{id}}` en la URL al ID del producto que quieres consultar, debería devolver los detalles de ese producto en concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un nuevo Producto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Refresco Cola\",\r\n    \"marca\": \"Pepsi\",\r\n    \"precio\": 1,\r\n    \"unidades\": 100\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/tienda/productos/create",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"productos",
+						"create"
+					]
+				},
+				"description": "Esta solicitud POST crearía un nuevo producto en la tienda.\n\n**Caso de uso:** En este caso, en el cuerpo de la solicitud se recibiría un JSON con los campos `nombre`, `marca`, `precio` y `unidades` que contendrían el nombre, la marca, el precio y las unidades del producto que se quiere crear."
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un Producto por su ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"precio\": 2,\r\n    \"unidades\": 200\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/tienda/productos/update/8",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"productos",
+						"update",
+						"8"
+					]
+				},
+				"description": "Esta solicitud PUT actualiza un producto existente en la tienda basándose en su ID.\n\n**Caso de uso:** Si se pone el valor del ID del producto que quieres actualizar, podrás editar los campos `nombre, marca, precio` o `unidades` en el cuerpo de la solicitud con los valores nuevos, y se modificaría el contenido de ese producto en concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un Producto por su ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/tienda/productos/delete/8",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"productos",
+						"delete",
+						"8"
+					]
+				},
+				"description": "Esta solicitud DELETE elimina un producto específico de la tienda seleccionado por su ID.\n\n**Caso de uso:** Si se cambia el valor de `{{id}}` al ID del producto que quieres eliminar, este se eliminaría al recibir y procesar la solicitud."
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener todos los Usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/tienda/usuarios/get",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"usuarios",
+						"get"
+					]
+				},
+				"description": "Esta solicitud GET obtiene una lista de todos los usuarios registrados en la tienda.\n\n**Caso de uso:** Al pulsar enviar debería devolver la información de todos los usuarios registrados."
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un Usuario por su ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/tienda/usuarios/get/1",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"usuarios",
+						"get",
+						"1"
+					]
+				},
+				"description": "Esta solicitud GET obtendría un usuario concreto de la tienda catalogado por su Id.\n\n**Caso de uso:** Si se cambia el valor de `{{id}}` en la URL al ID del usuario que quieres consultar, debería devolver los detalles de ese usuario en concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un nuevo Usuario",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nombre\": \"Omar\", \r\n    \"apellidos\": \"Afonso Garcia\", \r\n    \"email\": \"oafonso@birt.eus\", \r\n    \"password\": \"507672\"     \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/tienda/usuarios/create",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"usuarios",
+						"create"
+					]
+				},
+				"description": "Esta solicitud POST crearía un nuevo usuario en la tienda.\n\n**Caso de uso:** En este caso, en el cuerpo de la solicitud se recibiría un JSON con los campos `nombre`, `apellidos`, `email` y `password` que contendrían el nombre, los apellidos, el email y el password del usuario que se quiere crear."
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un Usuario por su ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{    \r\n    \"nombre\": \"Iker\", \r\n    \"apellidos\": \"Arana\", \r\n    \"email\": \"iarana@birt.eus\", \r\n    \"password\": \"123672\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost/api/tienda/usuarios/update/8",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"usuarios",
+						"update",
+						"8"
+					]
+				},
+				"description": "Esta solicitud PUT actualiza un usuario existente en la tienda basándose en su ID.\n\n**Caso de uso:** Si se pone el valor del ID del usuario que quieres actualizar, podrás editar los campos `nombre, apellidos, email` o `password` en el cuerpo de la solicitud con los valores nuevos, y se modificaría el contenido de ese usuario en concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un Usuario por su ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/tienda/usuarios/delete/8",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"tienda",
+						"usuarios",
+						"delete",
+						"8"
+					]
+				},
+				"description": "Esta solicitud DELETE elimina un usuario específico de la tienda seleccionado por su ID.\n\n**Caso de uso:** Si se cambia el valor de `{{id}}` al ID del usuario que quieres eliminar, este se eliminaría al recibir y procesar la solicitud."
+			},
+			"response": []
+		}
+	]
+}
